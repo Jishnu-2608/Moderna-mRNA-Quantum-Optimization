@@ -1,5 +1,36 @@
 # Optimization of mRNA Secondary Structure Using Quantum Computing
 
+## Challenge Selected
+
+WISER Summer Program 2026 - Moderna Challenge
+
+## Problem Statement
+
+RNA secondary structure prediction is a computationally challenging problem because the number of possible folding combinations increases rapidly with sequence length.
+
+This project explores quantum computing approaches for optimizing RNA folding using energy minimization.
+
+## Proposed Solution
+
+A hybrid classical-quantum workflow is developed using Python and Qiskit to compare classical minimum free energy calculations with quantum optimization.
+
+## Limitations
+
+- Tested on short synthetic RNA sequences.
+- Quantum simulation was used instead of real quantum hardware.
+- Larger sequences require more computational resources.
+
+## Future Scope
+
+- Implement QAOA/VQE optimization.
+- Test larger RNA sequences.
+- Explore real quantum hardware.
+- Improve scalability.
+
+## AI Usage Disclosure
+
+ChatGPT was used for documentation assistance, code explanation, and repository organization guidance. All content was reviewed and verified by the project developer.
+
 ## Project Overview
 
 This project demonstrates how quantum computing can be applied to optimize mRNA secondary structure prediction. Classical minimum free energy (MFE) calculations are compared with a quantum-inspired optimization approach implemented using Qiskit.
