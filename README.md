@@ -53,6 +53,14 @@ This project demonstrates how quantum computing can be applied to optimize mRNA 
 - Matplotlib
 - Google Colab
 
+## RNA Secondary Structure and MFE
+
+RNA secondary structure describes how RNA nucleotides interact through base pairing.
+
+Minimum Free Energy (MFE) represents the most stable structure with the lowest energy state.
+
+Lower energy indicates a potentially more stable RNA structure.
+
 ## Workflow
 
 1. Generate RNA sequences
