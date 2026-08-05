@@ -1,0 +1,6 @@
+qiskit
+qiskit-algorithms
+ViennaRNA
+numpy
+pandas
+matplotlib
