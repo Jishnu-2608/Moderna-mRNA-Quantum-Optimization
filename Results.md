@@ -4,6 +4,19 @@
 
 The implemented workflow successfully compared classical RNA energy calculations with the quantum optimization approach.
 
+## Scaling Analysis
+
+As RNA sequence length increases, the number of possible secondary structures grows exponentially.
+
+Quantum approaches may face limitations due to:
+
+- Number of required qubits
+- Circuit depth
+- Noise effects
+- Simulation complexity
+
+Future work should investigate larger sequences and hardware implementations.
+
 ## Energy Comparison
 
 Results obtained:
