@@ -53,6 +53,24 @@ This project demonstrates how quantum computing can be applied to optimize mRNA 
 - Matplotlib
 - Google Colab
 
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Jishnu-2608/Moderna-mRNA-Quantum-Optimization.git
+```
+
+2. Install the required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open `Moderna_Project.ipynb` in Google Colab or Jupyter Notebook.
+
+4. Run all cells in order to reproduce the results.
+
 ## RNA Secondary Structure and MFE
 
 RNA secondary structure describes how RNA nucleotides interact through base pairing.
