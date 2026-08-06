@@ -101,6 +101,13 @@ Average Improvement: 0.20 kcal/mol
 
 The quantum optimization workflow achieved lower energy values than the classical approach in this demonstration, showing the potential of quantum computing for biological optimization problems.
 
+## Team Members
+- Jishnunagasre Penumudi (Individual Project)
+  - Research
+  - Project Development
+  - Quantum Implementation
+  - Documentation
+
 ## Author
 
 Jishnunagasre Penumudi
