@@ -2,69 +2,85 @@
 
 ## Experimental Results
 
-The implemented workflow successfully compared classical RNA energy calculations with the quantum optimization approach.
+The project successfully implemented a hybrid classical-quantum workflow for RNA secondary structure optimization.
 
-## Scaling Analysis
+The workflow included:
 
-As RNA sequence length increases, the number of possible secondary structures grows exponentially.
+- RNA sequence generation
+- RNA secondary structure prediction using ViennaRNA
+- Identification of valid RNA base pairs
+- Construction of a QUBO optimization model
+- Classical optimization
+- Quantum optimization using the Quantum Approximate Optimization Algorithm (QAOA)
+- Comparison of optimization results
 
-Quantum approaches may face limitations due to:
+---
 
-- Number of required qubits
-- Circuit depth
-- Noise effects
-- Simulation complexity
+## Optimization Results
 
-Future work should investigate larger sequences and hardware implementations.
+The optimization results obtained from the project are shown below.
 
-## Energy Comparison
+| Method | Energy |
+|---------|--------|
+| Classical Optimization | -4 |
+| QAOA Optimization | -4 |
 
-Results obtained:
+For the tested RNA sequence, both optimization methods produced the same optimal objective value.
 
-| Metric | Value |
-|--------|-------|
-| Average Classical Energy | -0.35 |
-| Average Quantum Energy | -0.55 |
-| Average Improvement | 0.20 |
+---
 
-## Observations
+## Interpretation
 
-The quantum optimization approach produced lower energy values compared to the classical baseline in the performed experiments.
+The RNA folding problem was successfully formulated as a Quadratic Unconstrained Binary Optimization (QUBO) problem.
 
-Lower energy indicates a potentially more stable RNA structure candidate.
+The QAOA algorithm was able to identify the same optimal solution as the classical optimizer, demonstrating that quantum optimization techniques can be applied to RNA secondary structure prediction.
+
+---
 
 ## Visualization
 
-The project includes a comparison graph showing:
+The repository includes a comparison graph illustrating the optimization results obtained using:
 
-- Classical energy values
-- Quantum energy values
+- Classical Optimization
+- Quantum Approximate Optimization Algorithm (QAOA)
 
-The graph helps visualize the difference between both approaches.
+The graph provides a visual comparison of the objective values produced by both methods.
+
+---
 
 ## Key Findings
 
-1. Quantum computing can be explored for RNA optimization problems.
+- ViennaRNA successfully predicted RNA secondary structures.
+- A valid QUBO optimization model was constructed.
+- Classical optimization identified the optimal RNA folding solution.
+- QAOA successfully reproduced the same optimal solution.
+- The project demonstrates the feasibility of using quantum optimization for RNA secondary structure prediction.
 
-2. Hybrid classical-quantum workflows provide a way to study biological optimization problems.
-
-3. Quantum simulations allow experimentation without requiring physical quantum hardware.
+---
 
 ## Limitations
 
-The current project has some limitations:
+The current implementation has several limitations:
 
 - Experiments were performed on short synthetic RNA sequences.
-- Quantum simulation was used instead of real quantum hardware.
-- Larger RNA sequences require more computational resources.
-- Further optimization methods need to be explored.
+- QAOA was executed on a quantum simulator instead of real quantum hardware.
+- The QUBO model is simplified for educational purposes.
+- Larger RNA sequences require more qubits and increased computational resources.
+
+---
 
 ## Future Improvements
 
 Future work may include:
 
-- Implementing advanced algorithms such as QAOA or VQE.
-- Testing larger RNA sequences.
-- Using real quantum hardware.
-- Comparing multiple quantum optimization techniques.
-- Improving scalability analysis.
+- Applying the workflow to larger RNA sequences.
+- Running QAOA on IBM Quantum hardware.
+- Comparing QAOA with Variational Quantum Eigensolver (VQE).
+- Developing more realistic QUBO formulations for RNA folding.
+- Investigating scalability for complex biological datasets.
+
+---
+
+## Conclusion
+
+The project successfully demonstrated a hybrid classical-quantum approach for RNA secondary structure optimization. The QAOA algorithm achieved the same optimal objective value as the classical optimizer for the tested RNA sequence, indicating that quantum optimization techniques have promising potential for solving computational biology problems.
