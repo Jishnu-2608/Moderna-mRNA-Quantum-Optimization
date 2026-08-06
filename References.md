@@ -2,34 +2,47 @@
 
 ## Research and Documentation Sources
 
-1. Moderna Challenge – WISER Summer Program 2026  
-https://www.thewiser.org/
+1. **WISER Summer Program 2026 – Moderna Challenge**
+   - https://www.thewiser.org/
 
-2. Qiskit Documentation  
-https://qiskit.org/documentation/
+2. **Qiskit Documentation**
+   - https://qiskit.org/documentation/
 
-3. ViennaRNA Package Documentation  
-https://www.tbi.univie.ac.at/RNA/
+3. **ViennaRNA Package Documentation**
+   - https://www.tbi.univie.ac.at/RNA/
 
-4. Quantum Approximate Optimization Algorithm (QAOA)  
-Farhi, E., Goldstone, J., Gutmann, S.  
-"A Quantum Approximate Optimization Algorithm"
+4. **Farhi, E., Goldstone, J., & Gutmann, S. (2014)**
+   - *A Quantum Approximate Optimization Algorithm (QAOA).*
 
-5. RNA Secondary Structure Prediction Research
+5. **Zuker, M.**
+   - *RNA Folding Prediction: A Practical Approach.*
 
-Zuker, M.
-"RNA folding prediction: A practical approach"
+---
 
-## Software Libraries
+## Software and Libraries
 
 - Python
 - Qiskit
+- ViennaRNA
 - NumPy
 - Pandas
 - Matplotlib
 - Google Colab
 
+---
+
 ## Dataset
 
-Synthetic RNA sequences generated for experimentation.
-No confidential, personal, or proprietary data was used.
+This project uses **synthetic RNA sequences** generated programmatically for experimentation and testing purposes. No confidential, personal, or proprietary datasets were used.
+
+---
+
+## AI Usage
+
+ChatGPT was used for:
+- Code explanation and debugging
+- Documentation assistance
+- Repository organization
+- README preparation
+
+All generated content was reviewed, verified, and modified before being included in the final project.
