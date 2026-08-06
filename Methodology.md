@@ -2,24 +2,33 @@
 
 ## Overview
 
-The project follows a hybrid classical-quantum workflow to compare traditional RNA folding approaches with quantum optimization techniques.
+This project follows a hybrid classical-quantum workflow to investigate RNA secondary structure optimization. Classical RNA folding is performed using ViennaRNA, while quantum optimization is implemented using the Quantum Approximate Optimization Algorithm (QAOA) in Qiskit.
+
+---
 
 ## Workflow
 
 RNA Sequence Generation
         |
         ↓
-Classical MFE Calculation
+RNA Secondary Structure Prediction (ViennaRNA)
         |
         ↓
-Quantum Circuit Development
+Identification of Valid Base Pairs
         |
         ↓
-Quantum Optimization Simulation
+QUBO Matrix Construction
         |
         ↓
-Energy Comparison and Analysis
+Classical Optimization
+        |
+        ↓
+QAOA Optimization
+        |
+        ↓
+Result Comparison and Analysis
 
+---
 
 ## Step 1: RNA Sequence Generation
 
@@ -30,56 +39,97 @@ Synthetic RNA sequences containing the four RNA nucleotides were generated:
 - C (Cytosine)
 - G (Guanine)
 
-Only synthetic sequences were used to satisfy data privacy requirements.
+Synthetic sequences were used for experimentation and demonstration purposes.
 
-## Step 2: Classical Benchmark
+---
 
-The classical approach was used as a reference method.
+## Step 2: RNA Secondary Structure Prediction
 
-The Minimum Free Energy (MFE) represents the most stable RNA structure.
+The ViennaRNA package was used to predict the RNA secondary structure and calculate the Minimum Free Energy (MFE) for each RNA sequence.
 
-Classical energy values were calculated and used as a benchmark.
+These results serve as the classical biological reference.
 
-## Step 3: Quantum Computing Approach
+---
 
-A quantum circuit was created using Qiskit.
+## Step 3: Base Pair Identification
 
-The workflow included:
+Possible RNA base pairs were identified according to RNA pairing rules:
 
-- Quantum state preparation
-- Quantum circuit simulation
-- Optimization-based energy comparison
+- A – U
+- C – G
+- G – U (Wobble Pair)
 
-The quantum approach was evaluated using a quantum simulator instead of real quantum hardware.
+These valid base pairs were used to construct the optimization problem.
 
-## Step 4: Performance Comparison
+---
 
-Classical and quantum energy values were compared using:
+## Step 4: QUBO Model Construction
 
-- Energy values
-- Average improvement
-- Visualization graphs
+The RNA folding problem was formulated as a Quadratic Unconstrained Binary Optimization (QUBO) model.
+
+The QUBO matrix includes:
+
+- Objective function for minimizing energy
+- Constraints to prevent invalid or conflicting base pairs
+
+This formulation allows the optimization problem to be solved using quantum algorithms.
+
+---
+
+## Step 5: Classical Optimization
+
+A classical optimization approach was used to search all possible binary solutions and identify the configuration with the minimum objective value.
+
+This solution serves as the baseline for comparison.
+
+---
+
+## Step 6: Quantum Optimization (QAOA)
+
+The QUBO problem was solved using the Quantum Approximate Optimization Algorithm (QAOA) implemented with Qiskit.
+
+The algorithm was executed on a quantum simulator to obtain the optimal solution.
+
+---
+
+## Step 7: Performance Comparison
+
+The results obtained from classical optimization and QAOA were compared using:
+
+- Objective (energy) values
+- Selected RNA base pairs
+- Comparison graph
+
+---
 
 ## Tools and Technologies
 
-Programming Language:
+### Programming Language
+
 - Python
 
-Libraries:
+### Libraries
+
 - Qiskit
+- Qiskit Algorithms
+- ViennaRNA
 - NumPy
 - Pandas
 - Matplotlib
 
-Platform:
+### Platform
+
 - Google Colab
+
+---
 
 ## AI Usage Disclosure
 
 ChatGPT was used for:
 
-- Project documentation assistance
 - Code explanation
-- Repository organization guidance
+- Documentation assistance
+- Repository organization
+- Debugging support
 
-All generated content and code were reviewed, modified, and verified by the project developer.
+All generated content was reviewed, verified, and modified before inclusion in the final project.
